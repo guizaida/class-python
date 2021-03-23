@@ -1,0 +1,6 @@
+a=eval(input("請輸入矩形的長:"))
+b=eval(input("請輸入矩形的寬:"))
+c=a*b
+d=(a+b)*2
+print("矩形的周長",int(c))
+print("矩形的面積",int(d))
