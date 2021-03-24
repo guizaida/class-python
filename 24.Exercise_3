@@ -1,0 +1,9 @@
+x=int(input("請輸入數字：”）
+if (x%5=0&x%8=0)
+    print(x,“是五跟八的倍數“）
+elif x%5=0:
+    Print(x,"是五的倍數")
+elif x%8=0:
+    Print(x,"是八的倍數")
+else:
+    print(x,"不是八跟五的倍數"） 
