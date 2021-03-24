@@ -1,0 +1,57 @@
+# s1="happynewyear"
+# print(s1[4:9])#找出S1中第5到第8個字
+# print(s1[:9])#找出S1中第0到9的個字
+# print(s1[5:])#找出s1中第6到最後一個字
+# print(s1[0:])#找出s1中所有的
+
+x="qwewqrqr"
+# print(ord("A"))#回傳變數X中字元的unicode編碼(十進位)
+# print(chr(x))#回傳變數X中字元的unicode編碼
+print(max(x))#回傳變數X中字元最大值
+print(min(x))#回傳變數X中字元最小值
+print(str(x))#將變數X轉換成字串型態
+c="asdfghj"
+print(str.upper(c))#將變數C中所有字元轉換成大寫
+str.lower(c)#將變數C中所有字源轉換成小寫
+str.swapcase(c)#將變數C中所有字元大小寫互換
+str.capitalize(c)#將變數C中第一個字元變成大寫
+str.title(c)#將變數C中每一個單字的第一個字元轉換成大寫
+str.replace("c","g")#將變數中的C字元換成A字元
+
+d="abcdef"
+str.isupper(d)#判斷變數D中的字元是否全部是大寫是回傳True不是回傳False
+str.islower(d)#判斷變數D中的字元是否全部是小寫是回傳True不是回傳False
+str.isidentifier()#判斷變數D中的字元是否是合法可辨識的字元是回傳True不是回傳False
+
+e="asdasd"
+str.isspace(e)#檢查變數e中字元是否為空白是回傳True不是回傳False
+str.isstitle(e)#檢查變數e中字元的第一個字是否為大寫是回傳True不是回傳False
+
+f="hjkk"
+f.isalpha()#判斷變數F中的字元是否為英文字母是回傳True不是回傳False
+f.isdigit()#判斷變數F中的字元是否只包含整數是回傳True不是回傳False
+f.isdecimal()#判斷變數F中的字元是否包含整數是回傳True不是回傳False
+f.isnumeric()#判斷變數F中的字元是否包含整數,羅馬數字,中文整數是回傳True不是回傳False
+g="asaaasd"
+g.count("a")#判斷變數G中的字串A出現幾次
+g.startswith("a")#判斷變數G中是否為A開頭
+g.endswith("a")#判斷變數G中是否為A結尾
+g.find("a")#判斷變數G中A的最小索引值
+g.rfinf("a")#判斷變數G中A的最大索引值
+print("_______________________________________________________________________")
+h="uiuoihh"
+h.split()#刪除H字串中的文字如不輸入則預設空白
+h.strip()#刪除H字串中兩側的文字如不輸入則預設空白
+h.lstrip()#刪除H字串中左側的文字如不輸入則預設空白
+h.rstrip()#刪除H字串右中側的文字如不輸入則預設空白
+print("_______________________________________________________________________")
+i="saads"#字串靠左,數字靠右
+i.center(20)#回傳欄位寬度為20且置中的I字串     
+i.ljust(20)#回傳欄位寬度為20靠左的I字串
+i.zfill(20)#回傳欄位寬度20的i字元,在空白處填上0 
+format(i,"20")#回傳變數I中字串靠右並空白20格
+format(i,">20")#回傳變數I中字串靠右並空白20格
+format(i,"<20")#回傳變數I中字串靠左並空白20格
+print("____________________________________________________________________")
+
+
