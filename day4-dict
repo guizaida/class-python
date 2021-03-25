@@ -8,3 +8,7 @@
 # a={"one":1,"two":2}
 # b={"one":"一","two":"二"}
 # print("one" in a)
+# dic={"x":132,"c":456}
+# print(dic.keys())輸出dic中的所有key
+# print(dic.values())輸出dic中所有的value
+# print(dic.items())輸出dic中所有的key%value
