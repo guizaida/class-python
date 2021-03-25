@@ -1,0 +1,37 @@
+#list.append(x)將變數X的內容放到list的最後
+# x=[1,2,3,4,5,6,7]
+# x.append(8)
+# print(x)
+#list.extend(x)將X字原加到list的最後
+# x=[1,2,3,4,5,6,7,8,9]
+# y=[10,11,12,13,14,15,16,17,18]
+# x.extend(y)
+# print(x)
+#list.count(x)計算list中X出現的次數
+# x=[1,2,3,4,5,6,7,8,8,8,8,8,8]
+# print(x.count(8))
+#list.index(x)回傳X在list中的索引值
+# x=[1,2,3,4,5]
+# print(x.index(3))
+#list.insert(i,x)將x插入列表中索引值為I的地方
+# x=[1,2,3,4,5]
+# x.insert(3,4)
+# print(x)
+#list.pop(x)找出list中第X個索引值得元素
+# x=[1,2,3,4,5]
+# print(x.pop(3))
+#list.remove(x)移除list中第一個X元素
+# x=[1,2,3,4,5]
+# x.remove(2)
+# print(x)
+#list.reverse()倒敘顯示list
+# x=[1,2,3,4,5]
+# x.reverse()
+# print(x)
+#list.sort()直接修改原始list中元素排列依順序排列
+# x=[1,3,2,5,4]
+# x.sort()
+# print(x)
+#list.sorted()保留原本list,產生一個照順序排列的list
+# x=[1,3,2,5,4]
+# print(sorted(x))
