@@ -1,0 +1,10 @@
+#dict字典
+#dict=[key,value]
+#key類似索引值
+# a={"蘋果":"apple","phone":"手機","three":3}
+# x=a["phone"]
+# print(x)
+#字典中in比的是key
+# a={"one":1,"two":2}
+# b={"one":"一","two":"二"}
+# print("one" in a)
