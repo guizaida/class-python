@@ -1,0 +1,6 @@
+#在json中
+{}=物件格式=puthon中的字典
+[]=陣列=pyhton中的list
+讀取用load
+寫入用dump
+如果寫入值有中文則須加入ensure_ascii=False否則系統預設ensure_ascii=True會將中文已16進位寫入檔案
