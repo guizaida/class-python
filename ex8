@@ -1,0 +1,35 @@
+import json
+import time
+
+#start=time.time()
+fn='drugstore.json'
+with open(fn,encoding='utf-8-sig') as drugfile:
+    drugs=json.load(drugfile)
+    
+druglist=[]   
+'''for i in range(len(drugs)):
+    if drugs[i][0]['機構狀態'] == '開業':
+        if drugs[i][2]['地址縣市別'] == '新北市':
+            druglist.append(drugs[i])
+    if len(druglist) == 20:
+        break
+for i in range(10):
+    print(druglist[i+10][1]['機構名稱'],druglist[i+10][2]['地址縣市別']+druglist[i+10][3]['地址鄉鎮市區']+druglist[i+10][4]['地址街道巷弄號']) 
+
+end=time.time()
+print(end-start)'''
+
+
+start2=time.time()
+for i in range(len(drugs)):
+    if drugs[i][2]['地址縣市別'] == '新北市':
+        if drugs[i][0]['機構狀態'] == '開業':
+            druglist.append(drugs[i])
+    if len(druglist) == 20:#節省時間用
+        break
+for i in range(10,20):
+    print(druglist[i][1]['機構名稱'],druglist[i][2]['地址縣市別']+druglist[i][3]['地址鄉鎮市區']+druglist[i][4]['地址街道巷弄號']) 
+
+end2=time.time()
+
+print(end2-start2)
