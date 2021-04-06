@@ -1,0 +1,13 @@
+
+import numpy as np
+a=np.random.randint(1,21,20)
+print("隨機正整數:",a)
+arr=np.array(a).reshape(5,4)
+y=arr[[0,0,4,4],[0,3,0,3]]
+print("矩陣內容:\n",arr)
+print("最大:",arr.max())
+print("最小:",arr.min())
+print("平均:",arr.mean())
+print("總和:",arr.sum())
+print("標準差:",arr.std())
+print("四個角落的內容元素:\n",y.reshape(2,2))
