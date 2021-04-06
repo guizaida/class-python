@@ -1,4 +1,10 @@
-# import numpy as np
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Apr  6 11:13:56 2021
+
+@author: ASUS
+"""
+import numpy as np
 # print(np.ones((5,1)))#產生一個5欄1列的陣列裡面都是1
 # print()
 # print(np.zeros((3,5)))#產生一個3欄5列的陣列裡面都是0
@@ -16,3 +22,23 @@
 # print(a.size)#計算陣列a中的總元素量
 # print(a.itemsize)#計算元素中的byte
 # print(a.nbute)#將陣列a的總元素量乘以總byte
+
+# x = np.random.randn(5,4) #建立一個5列4欄的隨機陣列
+# x.mean()#取X陣列的平均值
+# x.sum()#取X陣列的元素總和
+# x.max()#取X陣列的最大值
+# x.min()#取X陣列的最小值
+# x.prod()#陣列里元素的總和
+# x.argmin()#找出陣列X中最小值的索引值
+
+# x= np.array([[2,3,4],[5,6,7]])
+# x.cumsum()#用累加的方式計算陣列總和,並顯示dtype
+# print(np.std(x))#取標準差
+
+# 索引
+# x=np.arange(12).reshape(2,6)#生成一個0-11的2列6欄的陣列
+# y=x[1][1:]#y=x中第一列中第一個元素之後的所有元素
+# y[1]=200#更改元素1為200
+# a([2::2, ::2])#從第二欄開始間隔2欄從中尋找間隔2的元素
+# x=np.arange(12).reshape(3,4)
+# y=x[[0,1,1],[2,1,1]]#找出第0欄第2列以及第一欄第一列以及第一欄第一列的元素
