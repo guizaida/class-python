@@ -1,0 +1,18 @@
+# import numpy as np
+# print(np.ones((5,1)))#產生一個5欄1列的陣列裡面都是1
+# print()
+# print(np.zeros((3,5)))#產生一個3欄5列的陣列裡面都是0
+# print()
+# print(np.arange(1,10,2))#產生一個1開頭不包含10間距2的陣列
+# print()
+# print(np.linspace(0,100,20))#產生一個0到100分成20等份的陣列
+# a=np.array([[3,6,9],[2,4,6]])
+# print(a.ndim)#顯示陣列a有幾維
+# print(a.shape)#用tuple方式呈現陣列a
+# print(type(a))
+# print(a.dtype)#輸出陣列a的bit數量
+# print(a.data)#=回傳陣列a的記憶位子
+# print(a.T)#將陣列a順時鐘轉90度
+# print(a.size)#計算陣列a中的總元素量
+# print(a.itemsize)#計算元素中的byte
+# print(a.nbute)#將陣列a的總元素量乘以總byte
