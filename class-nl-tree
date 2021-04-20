@@ -1,0 +1,20 @@
+#決策樹演算法
+from sklearn import datasets
+import pandas as pd
+from sklearn import tree
+from sklearn.model_selection import train_test_split as tts
+#讀取鳶尾花資料集
+iris= datasets.load_iris()
+#轉置資料
+x = pd.DataFrame(iris.data,columns=iris.feature_names)
+target = pd.DataFrame(iris.target,columns=["target"])
+y = target["target"]
+#建立測試資料
+xtrain,xtest,ytrain,ytest =  tts(x,y,test_size=0.33,random_state=1)
+#max_dept=設定決策樹有幾層,預設是三層
+dtree=tree.DecisionTreeClassifier(max_depth=3)
+dtree.fit(xtrain,ytrain)
+#計算準確率
+s=dtree.score(xtest,ytest)
+print("準確率:",s)
+print(ytest.values)
